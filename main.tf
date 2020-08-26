@@ -7,3 +7,13 @@ resource "aws_security_group" "instance" {
     cidr_blocks = ["22.22.22.22/32"]
   }
 }
+
+resource "aws_security_group" "instance-sg-2" {
+  name = "terraform-example-instance-2"
+  ingress {
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+    cidr_blocks = ["22.22.22.11/32"]
+  }
+}
