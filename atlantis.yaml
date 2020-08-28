@@ -3,3 +3,9 @@ projects:
 - dir: running
   autoplan:
     when_modified: ["../running/**/*.tf", "*.tf*"]
+- dir: running/sg
+  autoplan:
+    when_modified: ["../running/sg/*.tf", "*.tf*"]
+- dir: running/sg2
+  autoplan:
+    when_modified: ["../running/sg2/*.tf", "*.tf*"]
