@@ -1,8 +1,8 @@
 version: 3
 projects:
-- dir: running
-  autoplan:
-    when_modified: ["../running/**/*.tf", "*.tf*"]
+#- dir: running
+  #autoplan:
+    #when_modified: ["../running/**/*.tf", "*.tf*"]
 - dir: running/sg
   autoplan:
     when_modified: ["../running/sg/*.tf", "*.tf*"]
